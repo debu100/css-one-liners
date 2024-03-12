@@ -107,3 +107,32 @@ h5 {
   font-size: 40px;
   pointer-events: none; /*cursor doesn't change remains as arrow*/
 }
+
+/*? max-content,min-content,fit-content  */
+h2 {
+  /* width: max-content; */
+  /** max-content good for large screen devices but not suitable for small screen sizes as the content will not break into new lines in the small screen sizes **/
+
+  /* width: min-content; */
+  /** min-content good for small screen devices but not suitable for large screen sizes as the content will be broken into new lines even in the large screen sizes although space is available---it considers the largest word and acts accn **/
+
+  /* width: fit-content; */
+  /** fit-content good for both large screen devices and also suitable for small screen sizes as the content will not break into new lines in the small screen sizes and will take up full space when it's available **/
+}
+
+/*?  aspect-ratio  */
+/* img {
+  width:15%;
+  aspect-ratio: 1/1;
+  aspect-ratio: 3/2;
+  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
+} */
+/** the above are some values of aspect ratio in css... aspect-ratio: 1/1 means that height and width are same----with this property we can adjust the height of an ele or an img accn to the width specified in % value **/
+
+/*? mix-blend-mode  */
+/* img {
+  mix-blend-mode: color-burn;
+} */
+
+/** with the help of this property we can eliminate any white background color of any image **/
