@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*? vertical text with writing mode ?*/
+
+h2 {
+  writing-mode: vertical-lr; /*vertical text effect*/
+}
+
+.wmvt {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*? Flip an Image  */
+
+img {
+  transform: scaleX(-1); /* flips the image */
+}
+
+/*? Scroll Snapping  */
+
+.card-box {
+  display: flex;
+}
+
+.box {
+  padding: 30px;
+  width: 20rem;
+  height: 20rem;
+  font-size: 10rem;
+  overflow-x: scroll;
+  scroll-snap-type: mandatory;
+}
+.box-1 {
+  background-color: blue;
+  min-width: 20rem;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+.box-2 {
+  background-color: rgb(22, 98, 102);
+  min-width: 20rem;
+}
+.box-3 {
+  background-color: rgb(3, 41, 11);
+  min-width: 20rem;
+}
+.box-4 {
+  background-color: rgb(200, 103, 51);
+  min-width: 20rem;
+}
+.box-5 {
+  background-color: rgb(255, 0, 217);
+  min-width: 20rem;
+}
+
+/*? resize everything  */
+
+.re {
+  background-color: bisque;
+  width: 800px;
+  margin: 50px auto;
+  /* the below properties makes you resize any element and not just textarea */
+  resize: both;
+  overflow: auto;
+}
+
+/*? truncate text  */
+
+.tr {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*? text stroke  */
+
+h1 {
+  text-align: center;
+  background-image: linear-gradient(red, blue, orange, green);
+  -webkit-text-stroke: 1px transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+}
+
+h4 {
+  text-align: center;
+  background: url(./bacth-img.png);
+  -webkit-text-stroke: 1px transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+}
+
+/*? Pointer Events  */
+
+h5 {
+  font-size: 40px;
+  pointer-events: none; /*cursor doesn't change remains as arrow*/
+}
